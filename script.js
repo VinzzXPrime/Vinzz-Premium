@@ -300,3 +300,37 @@ document.querySelector('#languageModal .close-btn').addEventListener('click', fu
     selectLanguage('id');
     languageModal.close();
 });
+
+    // Initialize Audio
+    function initializeAudio() {
+        bgMusic.volume = 0.5;
+        try {
+            bgMusic.play().then(() => {
+                soundToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+            }).catch((error) => {
+                console.log("Autoplay prevented:", error);
+                soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            });
+        } catch (error) {
+            console.log("Audio initialization error:", error);
+        }
+    }
+
+    // Audio Control
+    let isMusicPlaying = true;
+    soundToggle.addEventListener('click', () => {
+        if (isMusicPlaying) {
+            bgMusic.pause();
+            soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+        } else {
+            bgMusic.play();
+            soundToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+        }
+        isMusicPlaying = !isMusicPlaying;
+    });
+
+    // Initialize audio on first user interaction
+    document.addEventListener('click', function initClickHandler() {
+        initializeAudio();
+        document.removeEventListener('click', initClickHandler);
+    }, { once: true });
