@@ -68,6 +68,10 @@ document.querySelectorAll('.app-card').forEach(card => {
     });
 });
 
+document.querySelector('log-google-mod').addEventListener('click', function () {
+    document.querySelector('.menu-dialog').close();
+});
+
 const formSection = document.getElementById('formSection');
 const aboutSection = document.getElementById('aboutSection');
 const formLink = document.getElementById('formLink');
