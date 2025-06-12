@@ -472,11 +472,11 @@ header {
     color: #FF9800;
 }
 
-.comingsoon-btn {
-    background: rgba(255, 152, 0, 0.2);
+.comingsoon-btn
+    background: rgba(255, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 152, 0, 0.5);
+    border: 1px solid rgba(255, 0, 0, 0.5);
     color: #fff;
 }
 
@@ -507,7 +507,7 @@ footer {
         color: white;
     }
     .comingsoon-btn {
-        background: #ff0000;
+        background: #FFF;
         color: white;
     }
 }
