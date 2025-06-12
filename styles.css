@@ -477,7 +477,7 @@ header {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 0, 0, 0.5);
-    color: #FFFFFF;
+    color: #FF9800;
 }
 
 footer {
@@ -507,7 +507,7 @@ footer {
         color: white;
     }
     .comingsoon-btn {
-        background: #FF9800;
+        background: #FFFFFF;
         color: white;
     }
 }
