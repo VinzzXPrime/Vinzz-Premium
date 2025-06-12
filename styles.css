@@ -612,11 +612,10 @@ footer {
 .coming-soon {
   background-color: #f73325;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
 }
 
