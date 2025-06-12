@@ -447,7 +447,7 @@ header {
     transform: scale(1.1);
 }
 
-.updated-btn, .maintenance-btn {
+.updated-btn, .maintenance-btn, .comingsoon-btn {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
@@ -470,6 +470,14 @@ header {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 152, 0, 0.5);
     color: #FF9800;
+}
+
+.comingsoon-btn {
+    background: rgba(255, 152, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 152, 0, 0.5);
+    color: #fff;
 }
 
 footer {
@@ -498,6 +506,10 @@ footer {
         background: #FF9800;
         color: white;
     }
+    .comingsoon-btn {
+        background: #ff0000;
+        color: white;
+    }
 }
 
 @media (max-width: 768px) {
@@ -505,7 +517,7 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
-    .updated-btn, .maintenance-btn {
+    .updated-btn, .maintenance-btn, .comingsoon-btn {
         margin-top: 10px;
         margin-left: 0;
     }
