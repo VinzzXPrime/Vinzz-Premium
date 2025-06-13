@@ -94,7 +94,6 @@ const emailError = document.getElementById('emailError');
 const requestError = document.getElementById('requestError');
 const content = document.getElementById('content');
 const languageModal = document.getElementById('languageModal');
-const ChannelOfficial = document.getElementById('ChannelOfficial');
 
 const BOT_TOKEN = 'YOUR_VALID_BOT_TOKEN';
 const CHAT_ID_1 = '-100YOUR_PRIVATE_CHAT_ID';
@@ -210,6 +209,10 @@ function selectLanguage(lang) {
     });
 
     languageModal.close();
+    document.querySelector('.report-dialog').showModal();
+    showForm();
+
+    ChannelOfficial.close();
     document.querySelector('.report-dialog').showModal();
     showForm();
 }
