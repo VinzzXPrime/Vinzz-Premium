@@ -584,8 +584,8 @@ footer {
 /* Sound Toggle & Back to Top */
 .sound-toggle {
     position: fixed;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: var(--primary-color);
     border-radius: 50%;
     display: grid;
@@ -612,6 +612,19 @@ footer {
     box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
 }
 
+.sound-toggle {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sound-toggle:hover {
+    background-color: #3e8e41;
+}
+    
 /* Print Styles */
 @media print {
     .sound-toggle,
