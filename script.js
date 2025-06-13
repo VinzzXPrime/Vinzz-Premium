@@ -70,7 +70,7 @@ document.querySelectorAll('.app-card').forEach(card => {
 
 document.getElementById('chanel-official').addEventListener('click', function (event) {
     event.preventDefault();
-    document.getElementById('ChannelOfficial').showModal();
+    document.getElementById('ChanelModal').showModal();
 });
 
 const formSection = document.getElementById('formSection');
