@@ -68,7 +68,7 @@ document.querySelectorAll('.app-card').forEach(card => {
     });
 });
 
-document.getElementById('report-issue-link').addEventListener('click', function (event) {
+document.getElementById('chanel-official').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('ChannelOfficial').showModal();
 });
@@ -212,7 +212,7 @@ function selectLanguage(lang) {
     showForm();
 
     ChannelOfficial.close();
-    document.querySelector('.dialog-content').showModal();
+    document.querySelector('.chanel-official').showModal();
     showForm();
 }
 
