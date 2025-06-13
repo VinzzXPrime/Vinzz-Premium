@@ -76,7 +76,7 @@ header {
     transform: rotate(90deg);
 }
 
-.menu-dialog, .report-dialog, #languageModal {
+.menu-dialog, .report-dialog, #languageModal, #ChannelOfficial {
     background: linear-gradient(135deg, rgba(42, 52, 53, 0.98), rgba(0, 200, 83, 0.5));
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -92,7 +92,7 @@ header {
     z-index: 2000;
 }
 
-.menu-dialog[open], .report-dialog[open], #languageModal[open] {
+.menu-dialog[open], .report-dialog[open], #languageModal[open], #ChannelOfficial[open] {
     transform: scale(1) translateY(0);
     opacity: 1;
 }
@@ -344,6 +344,21 @@ header {
     background: #009624;
 }
 
+#ChannelOfficial button {
+    background: #00C853;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#ChannelOfficial button:hover {
+    background: #009624;
+}
+
 #aboutSection ol {
     margin: 0;
     padding-left: 20px;
@@ -493,7 +508,7 @@ footer {
 }
 
 @supports not (backdrop-filter: blur(10px)) {
-    .app-card, header, footer, .menu-dialog, .report-dialog, #languageModal {
+    .app-card, header, footer, .menu-dialog, .report-dialog, #languageModal, #ChannelOfficial {
         background: #2A3435;
         box-shadow: none;
         border: none;
@@ -521,7 +536,7 @@ footer {
         margin-top: 10px;
         margin-left: 0;
     }
-    .menu-dialog, .report-dialog, #languageModal {
+    .menu-dialog, .report-dialog, #languageModal, #ChannelOfficial {
         max-width: 320px;
         padding: 20px;
     }
