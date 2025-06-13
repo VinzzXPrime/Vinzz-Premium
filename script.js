@@ -73,7 +73,7 @@ document.getElementById('chanel-official').addEventListener('click', function (e
     document.getElementById('ChannelOfficial').showModal();
 });
 
-document.querySelector('ChannelOfficial').addEventListener('click', function (event) {
+document.querySelector('chanel-official').addEventListener('click', function (event) {
     if (event.target === this) {
         this.close();
     }
