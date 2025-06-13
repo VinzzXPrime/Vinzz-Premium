@@ -68,6 +68,18 @@ document.querySelectorAll('.app-card').forEach(card => {
     });
 });
 
+document.getElementById('chanel-official').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('ChannelOfficial').showModal();
+});
+
+document.getElementById('ChannelOfficial').addEventListener('click', function (event) {
+    if (event.target === this) {
+        selectLanguage('id');
+        this.close();
+    }
+});
+
 const formSection = document.getElementById('formSection');
 const aboutSection = document.getElementById('aboutSection');
 const formLink = document.getElementById('formLink');
@@ -82,6 +94,7 @@ const emailError = document.getElementById('emailError');
 const requestError = document.getElementById('requestError');
 const content = document.getElementById('content');
 const languageModal = document.getElementById('languageModal');
+const ChannelOfficial = document.getElementById('ChannelOfficial');
 
 const BOT_TOKEN = 'YOUR_VALID_BOT_TOKEN';
 const CHAT_ID_1 = '-100YOUR_PRIVATE_CHAT_ID';
@@ -299,6 +312,11 @@ window.addEventListener('resize', () => {
 document.querySelector('#languageModal .close-btn').addEventListener('click', function () {
     selectLanguage('id');
     languageModal.close();
+});
+
+document.querySelector('#ChannelOfficial .close-btn').addEventListener('click', function () {
+    selectLanguage('id');
+    ChannelOfficial.close();
 });
 
     // Initialize Audio
