@@ -68,6 +68,11 @@ document.querySelectorAll('.app-card').forEach(card => {
     });
 });
 
+document.getElementById('Chanel-Official').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('ChannelOfficial').showModal();
+});
+
 const formSection = document.getElementById('formSection');
 const aboutSection = document.getElementById('aboutSection');
 const formLink = document.getElementById('formLink');
