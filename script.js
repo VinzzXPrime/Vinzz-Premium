@@ -73,6 +73,16 @@ document.getElementById('chanel-official').addEventListener('click', function (e
     document.getElementById('ChanelModal').showModal();
 });
 
+document.querySelector('.chanel-official .close-btn').addEventListener('click', function () {
+    document.querySelector('.chanel-official').close();
+});
+
+document.querySelector('.chanel-official').addEventListener('click', function (event) {
+    if (event.target === this) {
+        this.close();
+    }
+});
+
 const formSection = document.getElementById('formSection');
 const aboutSection = document.getElementById('aboutSection');
 const formLink = document.getElementById('formLink');
