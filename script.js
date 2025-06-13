@@ -83,6 +83,12 @@ document.querySelector('.chanel-official').addEventListener('click', function (e
     }
 });
 
+document.getElementById('ChanelModal').addEventListener('click', function (event) {
+    if (event.target === this) {
+        this.close();
+    }
+});
+
 const formSection = document.getElementById('formSection');
 const aboutSection = document.getElementById('aboutSection');
 const formLink = document.getElementById('formLink');
@@ -213,6 +219,10 @@ function selectLanguage(lang) {
 
     languageModal.close();
     document.querySelector('.report-dialog').showModal();
+    showForm();
+
+    ChanelModal.close();
+    document.querySelector('.dialog-content').showModal();
     showForm();
 }
 
