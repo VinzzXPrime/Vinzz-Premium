@@ -75,7 +75,6 @@ document.getElementById('chanel-official').addEventListener('click', function (e
 
 document.getElementById('ChannelOfficial').addEventListener('click', function (event) {
     if (event.target === this) {
-        selectLanguage('id');
         this.close();
     }
 });
