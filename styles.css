@@ -584,11 +584,11 @@ footer {
 /* Sound Toggle & Back to Top */
 .sound-toggle {
     position: fixed;
-    width: 4rem;
-    height: 4rem;
+    width: 60px;
+    height: 60px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    display: grid;
+    display: flex;
     place-items: center;
     cursor: pointer;
     transition: var(--transition);
