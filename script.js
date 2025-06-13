@@ -212,7 +212,7 @@ function selectLanguage(lang) {
     showForm();
 
     ChannelOfficial.close();
-    document.querySelector('.report-dialog').showModal();
+    document.querySelector('.dialog-content').showModal();
     showForm();
 }
 
