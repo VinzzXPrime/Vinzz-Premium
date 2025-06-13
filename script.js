@@ -68,8 +68,9 @@ document.querySelectorAll('.app-card').forEach(card => {
     });
 });
 
-document.querySelector('chanel-official').addEventListener('click', function () {
-    window.location.href = 'ChannelOfficial';
+document.getElementById('report-issue-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('ChannelOfficial').showModal();
 });
 
 document.querySelector('ChannelOfficial').addEventListener('click', function (event) {
